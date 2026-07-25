@@ -23,7 +23,7 @@ body{
     width:100%;
     height:100vh;
 
-    background:url("images/banner.png") center center/cover no-repeat;
+    
 
     display:flex;
     align-items:center;
@@ -1022,5 +1022,32 @@ html{
     font-size:34px;
     right:20px;
 }
+.hero-slider{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:0;
+}
 
-      
+.hero-slider .tile{
+    position:absolute;
+    background-size:cover;
+    background-repeat:no-repeat;
+    backface-visibility:hidden;
+    transform-style:preserve-3d;
+    transition:transform .9s ease;
+}
+
+.overlay,
+.particles,
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+/* ===== PREMIUM HERO SLIDER ===== */
+
+
+
+
