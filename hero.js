@@ -6,10 +6,11 @@ if (!slider) return;
 
 const images = [
     "images/banner.png",
-    "images/hero2.jpg",
-    "images/hero3.jpg",
-    "images/hero4.jpg",
-    "images/hero5.jpg"
+    "images/14.jpg",
+    "images/15.jpg",
+    "images/16.jpg",
+    "images/17.jpg"
+    "images/18.jpg"
 ];
 
 const COLS = 12;
