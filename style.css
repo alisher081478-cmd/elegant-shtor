@@ -1127,3 +1127,24 @@ html{
     }
 
 }
+
+.hero-slider .tile{
+    position:absolute;
+    background-size:cover;
+    background-repeat:no-repeat;
+    backface-visibility:hidden;
+    transform-style:preserve-3d;
+    transition:transform .9s ease;
+}
+
+.overlay,
+.particles,
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+/* ===== PREMIUM HERO SLIDER ===== */
+
+
+
+
