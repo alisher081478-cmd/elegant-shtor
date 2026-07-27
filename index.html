@@ -15,30 +15,42 @@
 </head>
 
 <body>
-    <div class="curtain-wrapper">
 
-    <div class="curtain left-curtain"></div>
-
-    <div class="curtain right-curtain"></div>
-
-</div>
-    <div id="preloader">
+<!-- PRELOADER -->
+<div id="preloader">
     <div class="loader-content">
-
-        <h1 class="loader-logo">
-            ELEGANT
-        </h1>
-
-        <p class="loader-subtitle">
-            SHTOR PARDALARI
-        </p>
-
+        <h1 class="loader-logo">ELEGANT</h1>
+        <p class="loader-subtitle">SHTOR PARDALARI</p>
         <div class="loader-line"></div>
-
     </div>
 </div>
 
+<!-- CURTAINS -->
+<div class="curtain-wrapper">
+    <div class="curtain left-curtain"></div>
+    <div class="curtain right-curtain"></div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="logo">
+        ELEGANT
+    </div>
+
+    <nav>
+        <a href="#">Bosh sahifa</a>
+        <a href="catalog.html">Katalog</a>
+        <a href="#advantages">Afzalliklar</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
 <section class="hero">
+
+    <div class="hero-slider"></div>
 
     <div class="overlay"></div>
 
@@ -46,29 +58,32 @@
 
     <div class="hero-content">
 
-       <div class="logo">
-    <span class="word">ELEGANT</span>
-    <span class="subtitle">SHTOR PARDALARI</span>
-</div> 
+        <div class="logo">
+            <span class="word">ELEGANT</span>
+            <span class="subtitle">SHTOR PARDALARI</span>
+        </div>
+
         <h1>
             Har bir uy <br>
             go'zallikka loyiq
         </h1>
 
-      <div class="features">
-    <span>Sifat</span>
-    <span>Uslub</span>
-    <span>Nafislik</span>
-</div>
+        <div class="features">
+            <span>Sifat</span>
+            <span>Uslub</span>
+            <span>Nafislik</span>
+        </div>
 
         <a href="catalog.html" class="btn">
-    Katalog
-</a>
+            Katalog
+        </a>
 
     </div>
 
 </section>
-<section class="advantages hidden" id="advantages"></section>
+<!-- ADVANTAGES -->
+<section class="advantages hidden" id="advantages">
+
     <h2>Nima uchun biz?</h2>
 
     <div class="advantages-grid">
@@ -97,7 +112,8 @@
 
 </section>
 
-<section class="contact hidden" id="contact"></section>
+<!-- CONTACT -->
+<section class="contact hidden" id="contact">
 
     <h2>Kontaktlar</h2>
 
@@ -114,8 +130,14 @@
     </div>
 
 </section>
-<script src="script.js"></script>
-<footer class="footer hidden"></footer>
+
+<!-- FOOTER -->
+<footer class="footer hidden">
+
+
+    <h2>ELEGANT</h2>
+
+   <footer class="footer hidden">
 
     <h2>ELEGANT</h2>
 
@@ -128,24 +150,17 @@
     <small>© 2026 Elegant Shtor Pardalari. Barcha huquqlar himoyalangan.</small>
 
 </footer>
+
+<audio id="bgMusic" loop>
+    <source src="audio/background.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио.
+</audio>
+
+<button id="musicToggle">🎵</button>
+
+<script src="script.js"></script>
+<script src="hero.js"></script>
+<script src="music.js"></script>
+
 </body>
-<header class="navbar">
-
-    <div class="logo">
-        ELEGANT
-    </div>
-
-    <nav>
-
-        <a href="#">Bosh sahifa</a>
-
-        <a href="catalog.html">Katalog</a>
-
-        <a href="#advantages">Afzalliklar</a>
-
-        <a href="#contact">Kontakt</a>
-
-    </nav>
-
-</header>
 </html>
