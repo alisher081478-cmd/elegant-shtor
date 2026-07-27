@@ -869,7 +869,7 @@ html{
     SCROLL ANIMATION
 =========================*/
 @media (max-width:768px){
-    }
+    
 
 /* ===== Меню ===== */
 
@@ -880,10 +880,12 @@ html{
 }
 
 .navbar nav{
-    display:flex;
-    flex-wrap:wrap;
+
+    display:grid;
+    grid-template-columns:repeat(3, auto);
     justify-content:center;
-    gap:10px;
+    gap:12px 18px;
+
 }
 
 .navbar nav a{
@@ -1145,6 +1147,157 @@ html{
 }
 /* ===== PREMIUM HERO SLIDER ===== */
 
+/* ===== Плавое появление секций ===== */
 
+.hidden {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity .9s ease, transform .9s ease;
+}
 
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* =========================
+   CURTAIN GALLERY
+========================= */
+
+.gallery{
+    padding:120px 0;
+    background:#070707;
+}
+
+.gallery-title{
+    text-align:center;
+    color:#fff;
+    font-size:52px;
+    margin-bottom:60px;
+    font-family:"Cormorant Garamond",serif;
+    letter-spacing:2px;
+}
+
+.curtain-gallery{
+
+    width:90%;
+    max-width:1300px;
+    height:700px;
+
+    margin:auto;
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.6);
+
+}
+
+.gallery-back,
+.gallery-front{
+
+    position:absolute;
+    inset:0;
+
+}
+
+.gallery-back img,
+.gallery-front img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+.gallery-back{
+
+    z-index:1;
+
+}
+
+.gallery-front{
+
+    z-index:2;
+    pointer-events:none;
+
+}
+
+.left-half,
+.right-half{
+
+    position:absolute;
+    top:0;
+    width:50%;
+    height:100%;
+    overflow:hidden;
+
+    transition:1.2s ease;
+
+}
+
+.left-half{
+
+    left:0;
+
+}
+
+.right-half{
+
+    right:0;
+
+}
+
+.left-half img{
+
+    position:absolute;
+    left:0;
+    top:0;
+
+}
+
+.right-half img{
+
+    position:absolute;
+    right:0;
+    top:0;
+
+}
+
+.curtain-gallery.open .left-half{
+
+    transform:translateX(-100%);
+
+}
+
+.curtain-gallery.open .right-half{
+
+    transform:translateX(100%);
+
+}
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .gallery{
+        padding:70px 0;
+    }
+
+    .gallery-title{
+        font-size:32px;
+        margin-bottom:30px;
+    }
+
+    .curtain-gallery{
+    width:95%;
+    height:260px;
+    border-radius:18px;
+}
+
+}
 
