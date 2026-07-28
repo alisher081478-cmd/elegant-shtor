@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
 
             preloader.classList.add("hide");
 
-        }, 1500);
+        }, 5000);
 
     }
 
@@ -189,3 +189,24 @@ if (heroTitle) {
 }
 
 console.log("✔ Script.js loaded successfully");
+const video = document.getElementById("promoVideo");
+const playButton = document.getElementById("playVideo");
+const videoBox = document.querySelector(".video-box");
+
+if (video && playButton && videoBox) {
+
+    video.controls = false;
+
+    playButton.addEventListener("click", () => {
+
+        video.controls = true;
+
+        videoBox.classList.add("playing");
+
+        playButton.style.display = "none";
+
+        video.play();
+
+    });
+
+}
