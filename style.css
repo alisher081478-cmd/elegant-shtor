@@ -323,9 +323,12 @@ body{
    HERO ANIMATIONS
 ========================================== */
 
-.hero{
-    animation:heroZoom 18s ease-in-out infinite alternate;
+.hero-slider{
+    animation: heroZoom 18s ease-in-out infinite alternate;
+    transform-origin:center;
+    will-change:transform;
 }
+
 
 @keyframes heroZoom{
 
@@ -1099,4 +1102,15 @@ body{
 
 .video-box.playing video{
     pointer-events:auto;
+}
+.video-box{
+    width:100%;
+}
+
+.video-box video{
+    display:block;
+    width:100%;
+    height:auto;
+    aspect-ratio:16/9;
+    object-fit:cover;
 }

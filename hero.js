@@ -12,7 +12,10 @@ const images = [
     "images/17.jpg",
     "images/18.jpg"
 ];
-
+images.forEach(src => {
+    const img = new Image();
+    img.src = src;
+});
 // Автоматическая адаптация
 const isMobile = window.innerWidth <= 768;
 
